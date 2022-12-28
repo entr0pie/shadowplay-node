@@ -4,7 +4,7 @@ Server for Shadowplay Command-and-Control system. Register shells, mediate conne
 <img src="images/shadowplay-node.png" width=800px>
 
 ## How does it work? 
-Nodes are servers that contains addresses of collected shells. They mediate connections between those shells and the clients (shadowplay-cli), giving the users acess to any of them.
+Nodes are servers that contains addresses of collected shells. They mediate connections between those shells and the clients ([shadowplay-cli](https://github.com/entr0pie/shadowplay-cli)), giving the users acess to any of them.
 
 ## Installation
 
