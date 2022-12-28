@@ -32,6 +32,7 @@ These topics are under development:
 - [ ] Testing shells connection.
 - [ ] Log system on the server.
 - [ ] Adding multiple tokens on token.tmp
+- [ ] Closing correctly connections between Shell and Node.
 
 ## License 
 
