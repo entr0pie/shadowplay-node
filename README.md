@@ -12,7 +12,7 @@ Nodes are servers that contains addresses of collected shells. They mediate conn
 git clone https://github.com/entr0pie/shadowplay-node
 ```
 
-## Basic Usage:
+## Basic Usage
 
 ```
 python3 shadowplay-node.py --port <port-number>
