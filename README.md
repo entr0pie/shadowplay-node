@@ -28,6 +28,7 @@ These topics are under development:
 - [ ] User input validation and sanitization.
 - [ ] Handling more than one session per time.
 - [ ] Use end-to-end cryptography on cli-srv communications.
+- [ ] Add protection against bruteforcing.
 - [ ] SEND INFO function (Server and Shells)
 - [ ] Testing shells connection.
 - [ ] Log system on the server.
